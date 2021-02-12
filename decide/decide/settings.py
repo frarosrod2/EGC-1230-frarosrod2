@@ -75,7 +75,18 @@ MODULES = [
 
 BASEURL = 'https://examen-febrero-frarosrod2.herokuapp.com'
 
-APIS = {}
+
+APIS = {
+    'authentication': BASEURL,
+    'base': BASEURL,
+    'booth': BASEURL,
+    'census': BASEURL,
+    'mixnet': BASEURL,
+    'postproc': BASEURL,
+    'store': BASEURL,
+    'visualizer': BASEURL,
+    'voting': BASEURL,
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -154,6 +165,7 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
 
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
